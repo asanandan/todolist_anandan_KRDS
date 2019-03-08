@@ -6,7 +6,7 @@ var path = require('path');
 var mongoskin = require('mongoskin'); 
 //var db = mongoskin.db('mongodb://localhost:27017/todo?auto_reconnect', {safe:true});
 //mongodb+srv://anandan:<password>@cluster0-fynlq.mongodb.net/test?retryWrites=true
-var db = mongoskin.db('mongodb://anandan:anand_19/tasks', {safe:true});
+var db = mongoskin.db('mongodb+srv://anandan:anand_19@cluster0-fynlq.mongodb.net/tasks?retryWrites=true', {safe:true});
 var app = express();
 
 var favicon = require('serve-favicon'),
